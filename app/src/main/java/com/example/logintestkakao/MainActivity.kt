@@ -23,9 +23,6 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        val keyHash = Utility.getKeyHash(this)
-        Log.d("Hash", keyHash) //WP+qYQkbEde0ooTphdBuoO7QBng=
-
         UserApiClient.instance.accessTokenInfo{ tokenInfo, error ->
             if (error != null) {
                 Toast.makeText(this, "토큰 정보 보기 실패", Toast.LENGTH_SHORT).show()
