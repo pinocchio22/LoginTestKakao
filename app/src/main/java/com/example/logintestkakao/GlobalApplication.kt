@@ -12,7 +12,7 @@ import com.kakao.sdk.common.KakaoSdk
 class GlobalApplication : Application() {
     override fun onCreate() {
         super.onCreate()
-
+ 
         KakaoSdk.init(this, "c308aa956a47aab3dea6e74e98b5a3ed")
     }
 }
